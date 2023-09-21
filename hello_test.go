@@ -13,7 +13,7 @@ func TestHello(t *testing.T) {
 
 	})
 
-	t.Run("say 'Hello World' when the name string is empty", func(t *testing.T) {
+	t.Run("say 'Hello world' when the name string is empty", func(t *testing.T) {
 		got := hello("")
 		want := "Hello, World"
 
