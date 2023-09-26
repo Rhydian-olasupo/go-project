@@ -15,3 +15,13 @@ func SumAll(myslices1, myslices2 []int) []int {
 	return []int{x, y}
 
 }
+
+func SumTails(myslices1, myslices2 []int) []int {
+	var sums []int
+	ab := Sum(myslices1[1:])
+	cd := Sum(myslices2[1:])
+
+	sums = append(sums, ab, cd)
+
+	return sums
+}
