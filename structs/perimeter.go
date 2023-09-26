@@ -21,6 +21,15 @@ func (c Circle) Area() float64 {
 
 type Shape interface {
 	Area() float64
+	Perimeter() float64
+}
+
+func (r Rectangle) Perimeter() float64 {
+	return 2 * (r.Width + r.Height)
+}
+
+func (c Circle) Perimeter() float64 {
+	return 2 * math.Pi * c.radius
 }
 
 /*func Perimeter(rectangle Rectangle) float64 {
